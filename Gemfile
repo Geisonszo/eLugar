@@ -42,7 +42,7 @@ gem 'mocha'
 
 gem 'rails_12factor', group: :production
 
-group :development, :test do
+#group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'naive_bayes'
   gem 'knn'
@@ -53,7 +53,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
   gem 'foreman'
-end
+#end
 
 # group :test do
   # gem 'cucumber-rails', :require => false
@@ -70,7 +70,7 @@ gem 'simple_form'
 gem 'simplecov', :require => false, :group => :test
 gem 'selenium-webdriver'
 gem 'launchy'
-group :development do
+#group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   gem "rspec"
@@ -81,11 +81,11 @@ group :development do
   gem 'spring'
 	gem 'spring-commands-rspec'
 	gem 'spring-commands-cucumber'
-end
+#end
 
-group :test, :cucumber do
+#group :test, :cucumber do
 	gem 'pdf-reader'
-end
+#end
 gem 'devise'
 gem "js-routes"
 gem 'owlcarousel-rails'
