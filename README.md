@@ -6,7 +6,7 @@ Um software open-source que tem como objetivo permitir que os usuários possam o
 
 ## Posso testar a aplicação?
 
-Mas é claro! Ela está disponível [aqui](http://159.203.107.38).
+Mas é claro! Ela está disponível [aqui](http://138.197.23.40/).
 
 ## Com quais tecnologias o eLugar foi construído? 
 
@@ -18,10 +18,10 @@ Algumas issues estão listadas no repositório, acreditamos que um gráfico para
 
 ## Como instalar o eLugar no meu computador?
 
-O primeiro passo é fazer o download do código. Você pode fazer o download do ZIP dele [aqui](https://github.com/mfurquim/eLugar/archive/master.zip) mas recomendamos que você clone o repositório com o seguinte comando dentro da página em que você gostaria que o projeto fosse armazenado pelo Terminal:
+O primeiro passo é fazer o download do código. Você pode fazer o download do ZIP dele [aqui](https://github.com/Geisonszo/eLugar.git) mas recomendamos que você clone o repositório com o seguinte comando dentro da página em que você gostaria que o projeto fosse armazenado pelo Terminal:
 
 ```
-git clone git@github.com:mfurquim/eLugar.git
+git clone https://github.com/Geisonszo/eLugar.git
 ```
 
 Para o próximo passo vamos precisar do Ruby, Ruby on Rails e Bundler instalados. Se você não possuir algum deles, clique [aqui](http://railsinstaller.org/en). Feito isso, precisamos instalar todas as dependências que o eLugar requer. Para isso execute o seguinte comando:
