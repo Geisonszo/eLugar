@@ -1,6 +1,5 @@
 language: ruby
 rvm:
   - 2.2.0
-script:
-	-bundle exec rake db:test:setup 
-	-bundle exec rake test
+before_script: bundle exec rake db:test:setup
+script: bundle exec rake test
