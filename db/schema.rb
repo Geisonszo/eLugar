@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160616223523) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cities", force: :cascade do |t|
     t.string   "name"
     t.integer  "population"
@@ -38,7 +41,7 @@ ActiveRecord::Schema.define(version: 20160616223523) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "comments", ["city_id"], name: "index_comments_on_city_id"
+  add_index "comments", ["city_id"], name: "index_comments_on_city_id", using: :btree
 
   create_table "profile_quizzes", force: :cascade do |t|
     t.integer  "answer1"
@@ -55,8 +58,8 @@ ActiveRecord::Schema.define(version: 20160616223523) do
     t.integer  "population"
   end
 
-  add_index "profile_quizzes", ["user_id"], name: "index_profile_quizzes_on_user_id"
-  add_index "profile_quizzes", ["users_id"], name: "index_profile_quizzes_on_users_id"
+  add_index "profile_quizzes", ["user_id"], name: "index_profile_quizzes_on_user_id", using: :btree
+  add_index "profile_quizzes", ["users_id"], name: "index_profile_quizzes_on_users_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
@@ -69,7 +72,7 @@ ActiveRecord::Schema.define(version: 20160616223523) do
     t.integer  "profileQuiz_id"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["profileQuiz_id"], name: "index_users_on_profileQuiz_id"
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["profileQuiz_id"], name: "index_users_on_profileQuiz_id", using: :btree
 
 end
