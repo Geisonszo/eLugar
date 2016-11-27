@@ -72,7 +72,7 @@ gem 'selenium-webdriver'
 gem 'launchy'
 #group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.0', group: :development
   gem "rspec"
 
   gem 'bootstrap-sass', '~>3.2.0'
