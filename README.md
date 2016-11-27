@@ -18,7 +18,7 @@ Algumas issues estão listadas no repositório, acreditamos que um gráfico para
 
 ## Como instalar o eLugar no meu computador?
 
-O primeiro passo é fazer o download do código. Você pode fazer o download do ZIP dele [aqui](https://github.com/mfurquim/eLugar/archive/master.zip) mas recomendamos que você clone o repositório com o seguinte comando dentro da página em que você gostaria que o projeto fosse armazenado pelo Terminal:
+O primeiro passo é fazer o download do código. Você pode fazer o download do ZIP dele [aqui](https://github.com/Geisonszo/eLugar.git) mas recomendamos que você clone o repositório com o seguinte comando dentro da página em que você gostaria que o projeto fosse armazenado pelo Terminal:
 
 ```
 git clone git@github.com:mfurquim/eLugar.git
