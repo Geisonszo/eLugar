@@ -1,5 +1,5 @@
 language: ruby
 rvm:
   - 2.2.0
-before_script: bundle exec rake db:test:setup
+before_script: bundle exec rake db:create:all
 script: bundle exec rake test
